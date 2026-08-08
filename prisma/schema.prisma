@@ -1,0 +1,78 @@
+-- Enums for Wallet & Payment Lifecycle
+CREATE TYPE "WalletStatus" AS ENUM ('ACTIVE', 'FROZEN', 'SUSPENDED');
+CREATE TYPE "PaymentMethodType" AS ENUM ('BKASH', 'NAGAD', 'ROCKET', 'BANK_TRANSFER');
+CREATE TYPE "PaymentRequestStatus" AS ENUM ('PENDING', 'APPROVED', 'REJECTED', 'CANCELLED');
+CREATE TYPE "WalletTransactionType" AS ENUM ('DEPOSIT', 'WITHDRAWAL', 'PURCHASE', 'REFUND', 'ADMIN_ADJUSTMENT');
+
+-- 1. System Payment Gateway Configurations (Managed by Admin)
+CREATE TABLE "payment_method_configs" (
+    "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    "method_type" "PaymentMethodType" UNIQUE NOT NULL,
+    "is_enabled" BOOLEAN NOT NULL DEFAULT true,
+    "display_name" VARCHAR(100) NOT NULL,
+    "account_number" VARCHAR(255) NOT NULL, -- e.g. bKash Agent/Personal No or Bank Acc No
+    "instruction_notes" TEXT, -- Steps shown to user on Add Money screen
+    "bank_details" JSONB DEFAULT '{}', -- Bank Name, Branch, Routing No if applicable
+    "created_at" TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 2. User Wallets (Cached aggregate balance protected by DB locks)
+CREATE TABLE "wallets" (
+    "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    "user_id" UUID UNIQUE NOT NULL REFERENCES "users"("id") ON DELETE RESTRICT,
+    "balance" DECIMAL(16, 4) NOT NULL DEFAULT 0.0000 CHECK ("balance" >= 0),
+    "currency" VARCHAR(3) NOT NULL DEFAULT 'BDT',
+    "status" "WalletStatus" NOT NULL DEFAULT 'ACTIVE',
+    "created_at" TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 3. Manual Payment Requests Submitted by Users
+CREATE TABLE "payment_requests" (
+    "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    "user_id" UUID NOT NULL REFERENCES "users"("id") ON DELETE RESTRICT,
+    "wallet_id" UUID NOT NULL REFERENCES "wallets"("id") ON DELETE RESTRICT,
+    "method_type" "PaymentMethodType" NOT NULL,
+    "amount" DECIMAL(16, 4) NOT NULL CHECK ("amount" > 0),
+    "currency" VARCHAR(3) NOT NULL DEFAULT 'BDT',
+    "transaction_reference" VARCHAR(255) UNIQUE NOT NULL, -- Hard uniqueness constraint against duplicate ref submissions
+    "payment_proof_url" VARCHAR(512),
+    "status" "PaymentRequestStatus" NOT NULL DEFAULT 'PENDING',
+    "admin_notes" TEXT,
+    "reviewed_by" UUID REFERENCES "users"("id") ON DELETE SET NULL,
+    "reviewed_at" TIMESTAMP WITH TIME ZONE,
+    "created_at" TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 4. Immutable Wallet Transaction Ledger
+CREATE TABLE "wallet_transactions" (
+    "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    "wallet_id" UUID NOT NULL REFERENCES "wallets"("id") ON DELETE RESTRICT,
+    "type" "WalletTransactionType" NOT NULL,
+    "amount" DECIMAL(16, 4) NOT NULL CHECK ("amount" > 0),
+    "balance_before" DECIMAL(16, 4) NOT NULL,
+    "balance_after" DECIMAL(16, 4) NOT NULL,
+    "payment_request_id" UUID UNIQUE REFERENCES "payment_requests"("id") ON DELETE RESTRICT,
+    "idempotency_key" VARCHAR(255) UNIQUE NOT NULL,
+    "description" TEXT NOT NULL,
+    "actor_id" UUID NOT NULL REFERENCES "users"("id"), -- Admin who approved or system ID
+    "created_at" TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 5. Audit Logging for Security Verification
+CREATE TABLE "payment_audit_logs" (
+    "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    "actor_id" UUID NOT NULL REFERENCES "users"("id"),
+    "action" VARCHAR(100) NOT NULL,
+    "target_type" VARCHAR(50) NOT NULL,
+    "target_id" UUID NOT NULL,
+    "payload" JSONB NOT NULL,
+    "ip_address" VARCHAR(45),
+    "created_at" TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX "idx_payment_requests_user" ON "payment_requests"("user_id");
+CREATE INDEX "idx_payment_requests_status" ON "payment_requests"("status");
+CREATE INDEX "idx_wallet_transactions_wallet" ON "wallet_transactions"("wallet_id");

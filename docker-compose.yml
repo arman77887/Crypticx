@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: crypticx_frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_BASE_URL=http://localhost:8000/api/v1
+    restart: always
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: crypticx_postgres
+    environment:
+      POSTGRES_DB: crypticx_db
+      POSTGRES_USER: crypticx_admin
+      POSTGRES_PASSWORD: crypticx_secure_pass_2026
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  postgres_data:

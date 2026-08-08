@@ -1,0 +1,91 @@
+"use client";
+
+import React, { useState } from "react";
+import Link from "next/link";
+import { Menu, Shield } from "lucide-react";
+import { LanguageSelector } from "../ui/LanguageSelector";
+import { MobileDrawer } from "./MobileDrawer";
+import { useTranslation } from "@/lib/i18n/context";
+
+export const Navbar: React.FC = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
+
+  const navLinks = [
+    { href: "/", label: t("nav.home") },
+    { href: "/services", label: t("nav.services") },
+    { href: "/tools", label: t("nav.tools") },
+    { href: "/marketplace", label: t("nav.marketplace") },
+    { href: "/cybersecurity", label: t("nav.cybersecurity") },
+    { href: "/hosting", label: t("nav.hosting") },
+    { href: "/domains", label: t("nav.domains") },
+    { href: "/about", label: t("nav.about") },
+    { href: "/contact", label: t("nav.contact") },
+  ];
+
+  return (
+    <header className="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-lg border-b border-slate-800/80">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        
+        {/* Brand Logo */}
+        <Link href="/" className="flex items-center gap-3 group">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-400 flex items-center justify-center shadow-lg shadow-blue-500/20 group-hover:scale-105 transition-transform">
+            <Shield className="w-6 h-6 text-white" />
+          </div>
+          <span className="text-2xl font-black tracking-wider text-white bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-blue-400">
+            CRYPTICX
+          </span>
+        </Link>
+
+        {/* Desktop Navigation Links */}
+        <nav className="hidden lg:flex items-center gap-6">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-sm font-medium text-slate-300 hover:text-blue-400 transition-colors"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        {/* Action Controls & Auth */}
+        <div className="hidden lg:flex items-center gap-4">
+          <LanguageSelector />
+          <Link
+            href="/login"
+            className="text-sm font-semibold text-slate-300 hover:text-white px-4 py-2 rounded-lg transition-colors"
+          >
+            {t("nav.login")}
+          </Link>
+          <Link
+            href="/register"
+            className="text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 px-5 py-2.5 rounded-lg shadow-md shadow-blue-600/30 transition-all hover:shadow-blue-500/50"
+          >
+            {t("nav.register")}
+          </Link>
+        </div>
+
+        {/* Mobile Hamburger Control */}
+        <div className="flex lg:hidden items-center gap-3">
+          <LanguageSelector />
+          <button
+            onClick={() => setMobileMenuOpen(true)}
+            className="p-2 text-slate-300 hover:text-white focus:outline-none"
+            aria-label="Open Navigation Menu"
+          >
+            <Menu className="w-7 h-7" />
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Drawer Overlay */}
+      <MobileDrawer
+        isOpen={mobileMenuOpen}
+        onClose={() => setMobileMenuOpen(false)}
+        links={navLinks}
+      />
+    </header>
+  );
+};

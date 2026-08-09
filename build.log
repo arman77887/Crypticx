@@ -1,0 +1,1292 @@
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:e3aa16ce472546c621d7dd2eed992b357816e5f2db776d8a905514f757ecad4a",
+
+      "name": "[internal] load local bake definitions",
+
+      "started": "2026-08-09T17:10:41.992735986Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "reading from stdin",
+
+      "vertex": "sha256:e3aa16ce472546c621d7dd2eed992b357816e5f2db776d8a905514f757ecad4a",
+
+      "current": 1024,
+
+      "timestamp": "0001-01-01T00:00:00Z",
+
+      "started": "2026-08-09T17:10:41.993764692Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "reading from stdin",
+
+      "vertex": "sha256:e3aa16ce472546c621d7dd2eed992b357816e5f2db776d8a905514f757ecad4a",
+
+      "current": 1024,
+
+      "timestamp": "0001-01-01T00:00:00Z",
+
+      "started": "2026-08-09T17:10:41.993764692Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "reading from stdin",
+
+      "vertex": "sha256:e3aa16ce472546c621d7dd2eed992b357816e5f2db776d8a905514f757ecad4a",
+
+      "current": 1048,
+
+      "timestamp": "0001-01-01T00:00:00Z",
+
+      "started": "2026-08-09T17:10:41.993764692Z",
+
+      "completed": "2026-08-09T17:10:41.993795734Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "reading from stdin",
+
+      "vertex": "sha256:e3aa16ce472546c621d7dd2eed992b357816e5f2db776d8a905514f757ecad4a",
+
+      "current": 1048,
+
+      "timestamp": "0001-01-01T00:00:00Z",
+
+      "started": "2026-08-09T17:10:41.993764692Z",
+
+      "completed": "2026-08-09T17:10:41.993795734Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:e3aa16ce472546c621d7dd2eed992b357816e5f2db776d8a905514f757ecad4a",
+
+      "name": "[internal] load local bake definitions",
+
+      "started": "2026-08-09T17:10:41.992735986Z",
+
+      "completed": "2026-08-09T17:10:41.993811726Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:6bd011e5d7d189e3b62e776d5dc366d5a3bd3952ec7eb64b04c12c575f2b7635",
+
+      "name": "[internal] load build definition from Dockerfile"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:6bd011e5d7d189e3b62e776d5dc366d5a3bd3952ec7eb64b04c12c575f2b7635",
+
+      "name": "[internal] load build definition from Dockerfile",
+
+      "started": "2026-08-09T17:10:42.147907174Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:6bd011e5d7d189e3b62e776d5dc366d5a3bd3952ec7eb64b04c12c575f2b7635",
+
+      "name": "[internal] load build definition from Dockerfile",
+
+      "started": "2026-08-09T17:10:42.147907174Z",
+
+      "completed": "2026-08-09T17:10:42.149252205Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:6bd011e5d7d189e3b62e776d5dc366d5a3bd3952ec7eb64b04c12c575f2b7635",
+
+      "name": "[internal] load build definition from Dockerfile",
+
+      "started": "2026-08-09T17:10:42.151729236Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring dockerfile:",
+
+      "vertex": "sha256:6bd011e5d7d189e3b62e776d5dc366d5a3bd3952ec7eb64b04c12c575f2b7635",
+
+      "name": "transferring",
+
+      "current": 0,
+
+      "timestamp": "2026-08-09T17:10:42.156350927Z",
+
+      "started": "2026-08-09T17:10:42.156349299Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring dockerfile:",
+
+      "vertex": "sha256:6bd011e5d7d189e3b62e776d5dc366d5a3bd3952ec7eb64b04c12c575f2b7635",
+
+      "name": "transferring",
+
+      "current": 89,
+
+      "timestamp": "2026-08-09T17:10:42.160663494Z",
+
+      "started": "2026-08-09T17:10:42.156349299Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring dockerfile:",
+
+      "vertex": "sha256:6bd011e5d7d189e3b62e776d5dc366d5a3bd3952ec7eb64b04c12c575f2b7635",
+
+      "name": "transferring",
+
+      "current": 322,
+
+      "timestamp": "2026-08-09T17:10:42.16572928Z",
+
+      "started": "2026-08-09T17:10:42.156349299Z",
+
+      "completed": "2026-08-09T17:10:42.165728793Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:6bd011e5d7d189e3b62e776d5dc366d5a3bd3952ec7eb64b04c12c575f2b7635",
+
+      "name": "[internal] load build definition from Dockerfile",
+
+      "started": "2026-08-09T17:10:42.151729236Z",
+
+      "completed": "2026-08-09T17:10:42.175653407Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:6a38b13eea10abc9faf174f8cded2d4a94d7b9e78f4439b911fd30e8d8f0fc7b",
+
+      "name": "[internal] load metadata for docker.io/library/node:20-alpine",
+
+      "started": "2026-08-09T17:10:42.194939088Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:6a38b13eea10abc9faf174f8cded2d4a94d7b9e78f4439b911fd30e8d8f0fc7b",
+
+      "name": "[internal] load metadata for docker.io/library/node:20-alpine",
+
+      "started": "2026-08-09T17:10:42.194939088Z",
+
+      "completed": "2026-08-09T17:10:42.953935482Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:354af8573038f1c61554d0b4ee44c93f6aab7109e2ecb865d1ac19f3d061c4df",
+
+      "name": "[internal] load .dockerignore"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:354af8573038f1c61554d0b4ee44c93f6aab7109e2ecb865d1ac19f3d061c4df",
+
+      "name": "[internal] load .dockerignore",
+
+      "started": "2026-08-09T17:10:42.957893216Z",
+
+      "completed": "2026-08-09T17:10:42.957924355Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:354af8573038f1c61554d0b4ee44c93f6aab7109e2ecb865d1ac19f3d061c4df",
+
+      "name": "[internal] load .dockerignore",
+
+      "started": "2026-08-09T17:10:42.958166138Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring context:",
+
+      "vertex": "sha256:354af8573038f1c61554d0b4ee44c93f6aab7109e2ecb865d1ac19f3d061c4df",
+
+      "name": "transferring",
+
+      "current": 0,
+
+      "timestamp": "2026-08-09T17:10:42.961807732Z",
+
+      "started": "2026-08-09T17:10:42.961807189Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring context:",
+
+      "vertex": "sha256:354af8573038f1c61554d0b4ee44c93f6aab7109e2ecb865d1ac19f3d061c4df",
+
+      "name": "transferring",
+
+      "current": 0,
+
+      "timestamp": "2026-08-09T17:10:42.962505804Z",
+
+      "started": "2026-08-09T17:10:42.961807189Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring context:",
+
+      "vertex": "sha256:354af8573038f1c61554d0b4ee44c93f6aab7109e2ecb865d1ac19f3d061c4df",
+
+      "name": "transferring",
+
+      "current": 2,
+
+      "timestamp": "2026-08-09T17:10:42.96311671Z",
+
+      "started": "2026-08-09T17:10:42.961807189Z",
+
+      "completed": "2026-08-09T17:10:42.963116316Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:354af8573038f1c61554d0b4ee44c93f6aab7109e2ecb865d1ac19f3d061c4df",
+
+      "name": "[internal] load .dockerignore",
+
+      "started": "2026-08-09T17:10:42.958166138Z",
+
+      "completed": "2026-08-09T17:10:42.969257478Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:ae0a5021fcee21271c71538d3238eabd142f7611876edf5556c3ed90506b3ea3",
+
+      "inputs": [
+
+        "sha256:a8e0e8673bda04a295164ed0ad5a075a7fd492f6e4c8307062b36972af74d0b7"
+
+      ],
+
+      "name": "[6/6] RUN npm run build"
+
+    },
+
+    {
+
+      "digest": "sha256:a8e0e8673bda04a295164ed0ad5a075a7fd492f6e4c8307062b36972af74d0b7",
+
+      "inputs": [
+
+        "sha256:ae2a7ed16c869f7942174ded9b5529c08a1f3bbb55d269ef6405ec8c788ebc08",
+
+        "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4"
+
+      ],
+
+      "name": "[5/6] COPY . ."
+
+    },
+
+    {
+
+      "digest": "sha256:ae2a7ed16c869f7942174ded9b5529c08a1f3bbb55d269ef6405ec8c788ebc08",
+
+      "inputs": [
+
+        "sha256:a5d6243804207eef7978de1cd31be2296dd8dab663650d31fbaef81012f9837a"
+
+      ],
+
+      "name": "[4/6] RUN npm ci"
+
+    },
+
+    {
+
+      "digest": "sha256:a5d6243804207eef7978de1cd31be2296dd8dab663650d31fbaef81012f9837a",
+
+      "inputs": [
+
+        "sha256:dbeba8accd97653c571fe5c3432b5c04091951637119a9df98ad685c02eaaf10",
+
+        "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4"
+
+      ],
+
+      "name": "[3/6] COPY package*.json ./"
+
+    },
+
+    {
+
+      "digest": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "[internal] load build context"
+
+    },
+
+    {
+
+      "digest": "sha256:dbeba8accd97653c571fe5c3432b5c04091951637119a9df98ad685c02eaaf10",
+
+      "inputs": [
+
+        "sha256:5aec1a136d6149a9010b04d1e7348554499cf29b67e768c83e1be39c5cfe8037"
+
+      ],
+
+      "name": "[2/6] WORKDIR /app"
+
+    },
+
+    {
+
+      "digest": "sha256:5aec1a136d6149a9010b04d1e7348554499cf29b67e768c83e1be39c5cfe8037",
+
+      "name": "[1/6] FROM docker.io/library/node:20-alpine@sha256:fb4cd12c85ee03686f6af5362a0b0d56d50c58a04632e6c0fb8363f609372293"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:5aec1a136d6149a9010b04d1e7348554499cf29b67e768c83e1be39c5cfe8037",
+
+      "name": "[1/6] FROM docker.io/library/node:20-alpine@sha256:fb4cd12c85ee03686f6af5362a0b0d56d50c58a04632e6c0fb8363f609372293",
+
+      "started": "2026-08-09T17:10:42.981393315Z",
+
+      "completed": "2026-08-09T17:10:42.98222638Z"
+
+    },
+
+    {
+
+      "digest": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "[internal] load build context",
+
+      "started": "2026-08-09T17:10:42.986754736Z",
+
+      "completed": "2026-08-09T17:10:42.986776481Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:dbeba8accd97653c571fe5c3432b5c04091951637119a9df98ad685c02eaaf10",
+
+      "inputs": [
+
+        "sha256:5aec1a136d6149a9010b04d1e7348554499cf29b67e768c83e1be39c5cfe8037"
+
+      ],
+
+      "name": "[2/6] WORKDIR /app",
+
+      "started": "2026-08-09T17:10:42.987792918Z",
+
+      "completed": "2026-08-09T17:10:42.987834254Z",
+
+      "cached": true
+
+    },
+
+    {
+
+      "digest": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "[internal] load build context",
+
+      "started": "2026-08-09T17:10:42.987819688Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring context:",
+
+      "vertex": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "transferring",
+
+      "current": 0,
+
+      "timestamp": "2026-08-09T17:10:42.990052285Z",
+
+      "started": "2026-08-09T17:10:42.990051742Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring context:",
+
+      "vertex": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "transferring",
+
+      "current": 89,
+
+      "timestamp": "2026-08-09T17:10:42.990801711Z",
+
+      "started": "2026-08-09T17:10:42.990051742Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring context:",
+
+      "vertex": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "transferring",
+
+      "current": 57613,
+
+      "timestamp": "2026-08-09T17:10:43.090848122Z",
+
+      "started": "2026-08-09T17:10:42.990051742Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring context:",
+
+      "vertex": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "transferring",
+
+      "current": 176364,
+
+      "timestamp": "2026-08-09T17:10:43.190866234Z",
+
+      "started": "2026-08-09T17:10:42.990051742Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring context:",
+
+      "vertex": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "transferring",
+
+      "current": 342627,
+
+      "timestamp": "2026-08-09T17:10:43.291883592Z",
+
+      "started": "2026-08-09T17:10:42.990051742Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring context:",
+
+      "vertex": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "transferring",
+
+      "current": 537715,
+
+      "timestamp": "2026-08-09T17:10:43.392063743Z",
+
+      "started": "2026-08-09T17:10:42.990051742Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring context:",
+
+      "vertex": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "transferring",
+
+      "current": 686365,
+
+      "timestamp": "2026-08-09T17:10:43.494122295Z",
+
+      "started": "2026-08-09T17:10:42.990051742Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring context:",
+
+      "vertex": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "transferring",
+
+      "current": 771249,
+
+      "timestamp": "2026-08-09T17:10:43.594443693Z",
+
+      "started": "2026-08-09T17:10:42.990051742Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring context:",
+
+      "vertex": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "transferring",
+
+      "current": 859374,
+
+      "timestamp": "2026-08-09T17:10:43.695015113Z",
+
+      "started": "2026-08-09T17:10:42.990051742Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring context:",
+
+      "vertex": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "transferring",
+
+      "current": 1025853,
+
+      "timestamp": "2026-08-09T17:10:43.79511285Z",
+
+      "started": "2026-08-09T17:10:42.990051742Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring context:",
+
+      "vertex": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "transferring",
+
+      "current": 1128622,
+
+      "timestamp": "2026-08-09T17:10:43.89527866Z",
+
+      "started": "2026-08-09T17:10:42.990051742Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring context:",
+
+      "vertex": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "transferring",
+
+      "current": 1294296,
+
+      "timestamp": "2026-08-09T17:10:43.995388142Z",
+
+      "started": "2026-08-09T17:10:42.990051742Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring context:",
+
+      "vertex": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "transferring",
+
+      "current": 1447190,
+
+      "timestamp": "2026-08-09T17:10:44.095466837Z",
+
+      "started": "2026-08-09T17:10:42.990051742Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring context:",
+
+      "vertex": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "transferring",
+
+      "current": 1614832,
+
+      "timestamp": "2026-08-09T17:10:44.195772337Z",
+
+      "started": "2026-08-09T17:10:42.990051742Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring context:",
+
+      "vertex": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "transferring",
+
+      "current": 1792911,
+
+      "timestamp": "2026-08-09T17:10:44.296179341Z",
+
+      "started": "2026-08-09T17:10:42.990051742Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "statuses": [
+
+    {
+
+      "id": "transferring context:",
+
+      "vertex": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "transferring",
+
+      "current": 1926848,
+
+      "timestamp": "2026-08-09T17:10:44.396252878Z",
+
+      "started": "2026-08-09T17:10:42.990051742Z",
+
+      "completed": "2026-08-09T17:10:44.39625182Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4",
+
+      "name": "[internal] load build context",
+
+      "started": "2026-08-09T17:10:42.987819688Z",
+
+      "completed": "2026-08-09T17:10:44.720274076Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:a5d6243804207eef7978de1cd31be2296dd8dab663650d31fbaef81012f9837a",
+
+      "inputs": [
+
+        "sha256:dbeba8accd97653c571fe5c3432b5c04091951637119a9df98ad685c02eaaf10",
+
+        "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4"
+
+      ],
+
+      "name": "[3/6] COPY package*.json ./",
+
+      "started": "2026-08-09T17:10:44.738896797Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:a5d6243804207eef7978de1cd31be2296dd8dab663650d31fbaef81012f9837a",
+
+      "inputs": [
+
+        "sha256:dbeba8accd97653c571fe5c3432b5c04091951637119a9df98ad685c02eaaf10",
+
+        "sha256:1af29e5cacde3ed98a9ddeef7bf235d5f97884efbe9969a195710402445c4dd4"
+
+      ],
+
+      "name": "[3/6] COPY package*.json ./",
+
+      "started": "2026-08-09T17:10:44.738896797Z",
+
+      "completed": "2026-08-09T17:10:44.879927035Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:ae2a7ed16c869f7942174ded9b5529c08a1f3bbb55d269ef6405ec8c788ebc08",
+
+      "inputs": [
+
+        "sha256:a5d6243804207eef7978de1cd31be2296dd8dab663650d31fbaef81012f9837a"
+
+      ],
+
+      "name": "[4/6] RUN npm ci",
+
+      "started": "2026-08-09T17:10:44.882338169Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "logs": [
+
+    {
+
+      "vertex": "sha256:ae2a7ed16c869f7942174ded9b5529c08a1f3bbb55d269ef6405ec8c788ebc08",
+
+      "stream": 2,
+
+      "data": "bnBtIHdhcm4gdGFyIFRBUl9FTlRSWV9FUlJPUiBFTk9FTlQ6IG5vIHN1Y2ggZmlsZSBvciBkaXJlY3RvcnksIGxzdGF0ICcvYXBwL25vZGVfbW9kdWxlcy9uZXh0L2Rpc3QvZXNtL3NlcnZlci9mdXR1cmUvaGVscGVycy9tb2R1bGUtbG9hZGVyJwo=",
+
+      "timestamp": "2026-08-09T17:10:59.564206946Z"
+
+    },
+
+    {
+
+      "vertex": "sha256:ae2a7ed16c869f7942174ded9b5529c08a1f3bbb55d269ef6405ec8c788ebc08",
+
+      "stream": 2,
+
+      "data": "bnBtIHdhcm4gdGFyIFRBUl9FTlRSWV9FUlJPUiBFTk9FTlQ6IG5vIHN1Y2ggZmlsZSBvciBkaXJlY3RvcnksIGxzdGF0ICcvYXBwL25vZGVfbW9kdWxlcy9uZXh0L2Rpc3Qvc2VydmVyL2Z1dHVyZS9oZWxwZXJzL21vZHVsZS1sb2FkZXInCg==",
+
+      "timestamp": "2026-08-09T17:10:59.566069066Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "logs": [
+
+    {
+
+      "vertex": "sha256:ae2a7ed16c869f7942174ded9b5529c08a1f3bbb55d269ef6405ec8c788ebc08",
+
+      "stream": 2,
+
+      "data": "bnBtIHdhcm4gdGFyIFRBUl9FTlRSWV9FUlJPUiBFTk9TUEM6IG5vIHNwYWNlIGxlZnQgb24gZGV2aWNlLCB3cml0ZQo=",
+
+      "timestamp": "2026-08-09T17:10:59.568050638Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "logs": [
+
+    {
+
+      "vertex": "sha256:ae2a7ed16c869f7942174ded9b5529c08a1f3bbb55d269ef6405ec8c788ebc08",
+
+      "stream": 2,
+
+      "data": "bnBtIHdhcm4gdGFyIFRBUl9FTlRSWV9FUlJPUiBFTk9TUEM6IG5vIHNwYWNlIGxlZnQgb24gZGV2aWNlLCBvcGVuICcvYXBwL25vZGVfbW9kdWxlcy9uZXh0L2Rpc3QvYnVpbGQvd2VicGFjay9sb2FkZXJzL25leHQtZmxpZ2h0LWxvYWRlci9tb2R1bGUtcHJveHkuanMnCg==",
+
+      "timestamp": "2026-08-09T17:10:59.572915796Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "logs": [
+
+    {
+
+      "vertex": "sha256:ae2a7ed16c869f7942174ded9b5529c08a1f3bbb55d269ef6405ec8c788ebc08",
+
+      "stream": 2,
+
+      "data": "bnBtIG5vdGljZQpucG0gbm90aWNlIE5ldyBtYWpvciB2ZXJzaW9uIG9mIG5wbSBhdmFpbGFibGUhIDEwLjguMiAtPiAxMi4wLjIKbnBtIG5vdGljZSBDaGFuZ2Vsb2c6IGh0dHBzOi8vZ2l0aHViLmNvbS9ucG0vY2xpL3JlbGVhc2VzL3RhZy92MTIuMC4yCm5wbSBub3RpY2UgVG8gdXBkYXRlIHJ1bjogbnBtIGluc3RhbGwgLWcgbnBtQDEyLjAuMgpucG0gbm90aWNlCg==",
+
+      "timestamp": "2026-08-09T17:10:59.594133854Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "logs": [
+
+    {
+
+      "vertex": "sha256:ae2a7ed16c869f7942174ded9b5529c08a1f3bbb55d269ef6405ec8c788ebc08",
+
+      "stream": 2,
+
+      "data": "bnBtIGVycm9yIEEgY29tcGxldGUgbG9nIG9mIHRoaXMgcnVuIGNhbiBiZSBmb3VuZCBpbjogL3Jvb3QvLm5wbS9fbG9ncy8yMDI2LTA4LTA5VDE3XzEwXzQ1XzYwNlotZGVidWctMC5sb2cK",
+
+      "timestamp": "2026-08-09T17:10:59.594864442Z"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "vertexes": [
+
+    {
+
+      "digest": "sha256:ae2a7ed16c869f7942174ded9b5529c08a1f3bbb55d269ef6405ec8c788ebc08",
+
+      "inputs": [
+
+        "sha256:a5d6243804207eef7978de1cd31be2296dd8dab663650d31fbaef81012f9837a"
+
+      ],
+
+      "name": "[4/6] RUN npm ci",
+
+      "started": "2026-08-09T17:10:44.882338169Z",
+
+      "completed": "2026-08-09T17:10:59.774694479Z",
+
+      "error": "process \"/bin/sh -c npm ci\" did not complete successfully: exit code: 1"
+
+    }
+
+  ]
+
+}
+
+Dockerfile:6
+
+--------------------
+
+   4 |     
+
+   5 |     COPY package*.json ./
+
+   6 | >>> RUN npm ci
+
+   7 |     
+
+   8 |     COPY . .
+
+--------------------
+
+failed to solve: process "/bin/sh -c npm ci" did not complete successfully: exit code: 1
+

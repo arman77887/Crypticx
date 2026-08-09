@@ -16,6 +16,7 @@ from app.api.v1 import (
     orders,
     wallet,
     admin,
+    domains,
 )
 
 app = FastAPI(
@@ -35,14 +36,15 @@ if settings.BACKEND_CORS_ORIGINS:
     )
 
 # Register existing API V1 Routers
-app.include_router(auth.router, prefix=f"{settings.API_V1_STR}/auth", tags=["auth"])
-app.include_router(users.router, prefix=f"{settings.API_V1_STR}/users", tags=["users"])
-app.include_router(services.router, prefix=f"{settings.API_V1_STR}/services", tags=["services"])
-app.include_router(products.router, prefix=f"{settings.API_V1_STR}/products", tags=["products"])
-app.include_router(cart.router, prefix=f"{settings.API_V1_STR}/cart", tags=["cart"])
-app.include_router(orders.router, prefix=f"{settings.API_V1_STR}/orders", tags=["orders"])
-app.include_router(wallet.router, prefix=f"{settings.API_V1_STR}/wallet", tags=["wallet"])
-app.include_router(admin.router, prefix=f"{settings.API_V1_STR}/admin", tags=["admin"])
+app.include_router(auth.router, prefix=settings.API_V1_STR, tags=["auth"])
+app.include_router(users.router, prefix=settings.API_V1_STR, tags=["users"])
+app.include_router(services.router, prefix=settings.API_V1_STR, tags=["services"])
+app.include_router(products.router, prefix=settings.API_V1_STR, tags=["products"])
+app.include_router(cart.router, prefix=settings.API_V1_STR, tags=["cart"])
+app.include_router(orders.router, prefix=settings.API_V1_STR, tags=["orders"])
+app.include_router(wallet.router, prefix=settings.API_V1_STR, tags=["wallet"])
+app.include_router(admin.router, prefix=settings.API_V1_STR, tags=["admin"])
+app.include_router(domains.router, prefix=settings.API_V1_STR, tags=["domains"])
 
 
 @app.get("/health", status_code=status.HTTP_200_OK, tags=["system"])

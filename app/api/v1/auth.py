@@ -47,7 +47,7 @@ async def register(user_in: UserCreate, db: AsyncSession = Depends(get_db)):
 @router.post("/login", response_model=Token)
 async def login(form_data: OAuth2PasswordRequestForm = Depends(), db: AsyncSession = Depends(get_db)):
     stmt = select(User).where(User.email == form_data.username)
-    user = (await db.execute(stmt)).scalar_one_or_none()
+    user = (await db.execute(stmt)).unique().scalar_one_or_none()
     
     if not user or not verify_password(form_data.password, user.hashed_password):
         raise HTTPException(status_code=400, detail="Incorrect email or password")
@@ -61,7 +61,7 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends(), db: AsyncSessi
 @router.post("/request-password-reset")
 async def request_password_reset(req: PasswordResetRequest, db: AsyncSession = Depends(get_db)):
     stmt = select(User).where(User.email == req.email)
-    user = (await db.execute(stmt)).scalar_one_or_none()
+    user = (await db.execute(stmt)).unique().scalar_one_or_none()
     if user:
         reset_token = create_email_token(email=user.email, token_type="reset")
         # In actual deployment, send via SMTP. Architecture mock output:
